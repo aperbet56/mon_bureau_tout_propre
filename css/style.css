@@ -1,0 +1,70 @@
+/**** Importation des polices DM Sans et Alan Sans ****/
+
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/**** Variables css ****/
+
+:root {
+    /* Bleu */
+    --dark-blue: #094067;
+    --light-blue: #3da9fc;
+
+    /* Blanc */
+    --white: #fffffe;
+
+    /* Noir */
+    --light-dark: #5f6c7b;
+
+    /* Polices */
+    --font-title: "Alan Sans", sans-serif;
+    --font: "DM Sans", sans-serif;
+}
+
+/**** Reset ****/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-title);
+    color: var(--dark-blue);
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    color: var(--light-dark);
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/**** body ****/
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font);
+    background-color: var(--white);
+}
