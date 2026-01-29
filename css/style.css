@@ -220,3 +220,45 @@ header {
 .estimate__simulator__right {
     width: 45%;
 }
+
+/**** footer ****/
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer h2 {
+    margin-bottom: 30px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li i {
+    padding-right: 10px;
+}
+
+footer ul li {
+    margin-bottom: 20px;
+}
+
+footer ul li,
+footer ul li a {
+    transition: color 0.3s ease-in-out;
+}
+
+footer ul li a:hover,
+footer ul li:hover {
+    color: var(--light-blue);
+}
+
+.footer__text {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
