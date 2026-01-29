@@ -6,11 +6,134 @@
     <title>Mon bureau tout propre</title>
     <!-- Importation de la favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- CDN font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
     <!-- Importation des styles -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- Début du header -->
+    <header>
+      <div class="header__logo">
+        <img
+          src="img/logo.webp"
+          alt="Logo de l'entreprise Mon bureau tout propre"
+        />
+      </div>
+      <nav class="header__navigation">
+        <ul class="header__list">
+          <li class="header__list__item">
+            <a href="#about" class="header__link first">A propos</a>
+          </li>
+          <li class="header__list__item">
+            <a href="#services" class="header__link second">Prestations</a>
+          </li>
+          <li class="header__list__item">
+            <a href="#estimate" class="header__link third">Devis</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__burger__btn">
+        <span class="header__burger__btn__bar b1"></span>
+        <span class="header__burger__btn__bar b2"></span>
+        <span class="header__burger__btn__bar b3"></span>
+      </button>
+    </header>
+    <!-- Fin du header-->
+
+    <!-- Début du main -->
+    <main class="main__content">
+      <!-- Début de la section about -->
+      <section class="about" id="about">
+        <h1 class="about__title">
+          Mon Bureau Tout Propre 🧽 <br />votre entreprise spécialisée dans le
+          nettoyage de bureaux
+        </h1>
+        <p class="about__text">
+          Mon Bureau Tout Propre est une entreprise de nettoyage professionnel
+          dédié aux entreprises qui souhaitent offrir à leurs collaborateurs un
+          environnement de travail sain, agréable et toujours impeccable.
+        </p>
+        <p class="about__text">
+          Nous vous garantissons un service fiable, rapide et respectueux de
+          l’environnement, avec des tarifs clairs et personnalisés.
+        </p>
+        <p class="about__text">
+          Offrez à vos collaborateurs un espace de travail propre et motivant...
+          Nous nous occupons du reste !
+        </p>
+      </section>
+      <!-- Fin de la section about -->
+
+      <!-- Début de la section services -->
+      <section class="services" id="services">
+        <h2 class="services__title">Nos services 🚀</h2>
+        <p class="services__text">
+          Nous proposons des prestations adaptées à vos besoins : entretien
+          régulier de vos bureaux, nettoyage des vitres, désinfection et hygiène
+          complète de vos locaux.
+        </p>
+        <article class="services__article">
+          <div class="service__card">
+            <div class="service__div">
+              <img
+                src="img/nettoyage-des-vitres.jpg"
+                alt="Images représantant le nettoyage des vitres"
+              />
+            </div>
+            <h3>Nettoyage des vitres 🪟</h3>
+          </div>
+
+          <div class="service__card">
+            <div class="service__div">
+              <img
+                src="img/calendrier.jpg"
+                alt="Images représantant un calendrier pour iun entretien régulier"
+              />
+            </div>
+            <h3>Entretien régulier 🗓️</h3>
+          </div>
+
+          <div class="service__card">
+            <div class="service__div">
+              <img
+                src="img/desinfection.jpg"
+                alt="Images représantant un produit nettoyant pour désinfecter un local"
+              />
+            </div>
+            <h3>Désinfection 🧼</h3>
+          </div>
+        </article>
+      </section>
+      <!-- Fin de la section services -->
+    </main>
+    <!-- Fin du main-->
+
+    <!-- Début du footer -->
+    <footer>
+      <h2 class="footer__title">Mon Bureau Tout Propre 🧽</h2>
+      <ul>
+        <li>
+          <i class="fa-solid fa-phone"></i>
+          <a href="#">04 05 06 07 04</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-at"></i>
+          <a href="mailto:monbureautoutpropre@gmail.com"
+            >monbureautoutpropre@gmail.com</a
+          >
+        </li>
+      </ul>
+      <p class="footer__text">
+        &copy;<span class="footer__text__year"></span>. Mon bureau tout propre
+        🧽 Tous droits réservés.
+      </p>
+    </footer>
+    <!-- Fin du footer -->
     <!-- Importation du fichier JavaScript -->
     <script src="script.js"></script>
   </body>
