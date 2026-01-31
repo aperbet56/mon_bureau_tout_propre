@@ -164,6 +164,16 @@ header {
     padding-block: 30px
 }
 
+.services__link {
+    text-align: center;
+    padding-bottom: 30px;
+    transform: color 0.3s ease-in-out;
+}
+
+.services__link:hover {
+    color: var(--light-blue);
+}
+
 .services__article {
     display: flex;
     gap: 15px;
