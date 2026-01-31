@@ -105,8 +105,8 @@ header {
 }
 
 .header__logo {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
 }
 
 .header__logo img {
@@ -166,19 +166,24 @@ header {
 
 .services__link {
     text-align: center;
-    padding-bottom: 30px;
-    transform: color 0.3s ease-in-out;
+    width: 280px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: var(--light-blue);
+    color: var(--white);
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .services__link:hover {
-    color: var(--light-blue);
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.69);
 }
 
 .services__article {
     display: flex;
     gap: 15px;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .service__card {
