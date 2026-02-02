@@ -83,7 +83,7 @@
           N'hésitez pas à nous contacter pour obtenir un accompagnement
           personnalisé !
         </p>
-        <a href="mailto:monbureautoutpropre@gmail.com" class="services__link"
+        <a href="mailto:monbureautoutpropre@gmail.com" class="btn services__btn"
           >Contact</a
         >
         <article class="services__article">
@@ -130,6 +130,152 @@
         Simulez le coût de votre prestation grâce à notre outil de tarification
         interactif en remplissant le formulaire ci-dessous.
       </p>
+
+      <div class="estimate__simulator">
+        <div class="estimate__simulator__left">
+          <form
+            id="price__form"
+            class="form__section"
+            role="form"
+            aria-labelledby="form__title"
+          >
+            <h3>Remplissez le formulaire</h3>
+            <div class="form__group">
+              <label for="surface">Surface des bureaux (en m²) *</label>
+              <input
+                type="number"
+                id="surface"
+                name="surface"
+                min="1"
+                max="10000"
+                required
+                aria-required="true"
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="form__group">
+              <span id="form__title" class="sr__only"
+                >Fréquence de nettoyage *</span
+              >
+              <label for="freq1">Fréquence de nettoyage *</label>
+              <div
+                class="frequency__options"
+                role="radiogroup"
+                aria-labelledby="form__title"
+              >
+                <div class="frequency__option">
+                  <input
+                    type="radio"
+                    id="freq1"
+                    name="frequency"
+                    value="1"
+                    required
+                    aria-labelledby="freq1__label"
+                  /><label id="freq1__label" for="freq1"
+                    >1 fois par semaine</label
+                  >
+                </div>
+                <div class="frequency__option">
+                  <input
+                    type="radio"
+                    id="freq2"
+                    name="frequency"
+                    value="2"
+                    required
+                    aria-labelledby="freq2__label"
+                  /><label id="freq2__label" for="freq2"
+                    >2 fois par semaine</label
+                  >
+                </div>
+                <div class="frequency__option">
+                  <input
+                    type="radio"
+                    id="freq5"
+                    name="frequency"
+                    value="5"
+                    required
+                    aria-labelledby="freq5__label"
+                  /><label id="freq5__label" for="freq5"
+                    >5 fois par semaine</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <div class="checkbox__group">
+                <input type="checkbox" id="windows" name="windows" />
+                <label for="windows"
+                  >🪟 Nettoyage des vitres inclus (+10%)</label
+                >
+              </div>
+            </div>
+
+            <button type="submit" class="calculate__btn">
+              Calculer votre devis
+            </button>
+            <button type="button" class="reset__btn" id="reset__simulator">
+              Réinitialiser
+            </button>
+          </form>
+          <div id="error" class="error"></div>
+        </div>
+        <aside class="estimate__simulator__right">
+          <div id="waiting__illustration" class="waiting__illustration">
+            <img
+              src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9f9.svg"
+              alt="Icône de balai, illustration de nettoyage de bureau"
+              class="waiting__illustration__img"
+            />
+            <p>
+              Remplissez le formulaire à gauche ! <br />Votre devis personnalisé
+              s'affichera ici.
+            </p>
+          </div>
+          <div id="results" class="results">
+            <h3>Votre devis personnalisé</h3>
+            <div class="price__breakdown">
+              <div class="price__item">
+                <span>Surface :</span>
+                <span class="result__surface">-</span>
+              </div>
+              <div class="price__item">
+                <span>Fréquence :</span>
+                <span class="result__frequency">-</span>
+              </div>
+              <div class="price__item">
+                <span>Tarif de base :</span>
+                <span class="result__base__price">-</span>
+              </div>
+              <div class="price__item">
+                <span>Après fréquence :</span>
+                <span class="result__frequency__price">-</span>
+              </div>
+              <div
+                class="price__item"
+                id="windows__result"
+                style="display: none"
+              >
+                <span>Avec vitres (+10%) :</span>
+                <span class="result__with__windows">-</span>
+              </div>
+              <div class="price__item">
+                <span>Montant HT :</span>
+                <span class="result__HT">-</span>
+              </div>
+              <div class="price__item">
+                <span>TVA (20%) :</span>
+                <span class="result__TVA">-</span>
+              </div>
+              <div class="price__item">
+                <span>Montant TTC :</span>
+                <span class="result__TTC">-</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
     </section>
     <!-- Fin de la section estimate -->
 
@@ -149,8 +295,8 @@
         </li>
       </ul>
       <p class="footer__text">
-        &copy; <span class="footer__text__year"></span>. Mon bureau tout propre
-        🧽 Tous droits réservés.
+        &copy; <span class="footer__text__year"></span> - Mon bureau tout
+        propre. Tous droits réservés.
       </p>
     </footer>
     <!-- Fin du footer -->
