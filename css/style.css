@@ -540,11 +540,21 @@ footer ul li:hover {
 
     .service__card {
         width: 45%;
+        height: 300px;
         margin-bottom: 30px;
     }
 
     .service__card:last-child {
         margin-bottom: 0;
+    }
+
+    .service__card:hover {
+        transform: scale(1.02);
+    }
+
+    .service__div,
+    .service__div img {
+        height: 240px;
     }
 
     .estimate__simulator {
@@ -600,7 +610,7 @@ footer ul li:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 100px;
+        padding-top: 110px;
     }
 
     .header__link {
