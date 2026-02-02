@@ -164,6 +164,10 @@ header {
 
 .about__title {
     margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.about__subtitle {
     margin-bottom: 30px;
 }
 
@@ -486,10 +490,6 @@ input[type="number"] {
     border-top: 2px solid var(--light-dark);
 }
 
-
-
-
-
 /**** footer ****/
 
 footer {
@@ -530,4 +530,28 @@ footer ul li:hover {
     text-align: center;
     font-weight: 700;
     font-size: 20px;
+}
+
+/**** Responsive design version tablette ****/
+
+@media screen and (max-width: 991px) {
+    .services__article {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service__card {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+
+    .service__card:last-child {
+        margin-bottom: 0;
+    }
+
+    .estimate__simulator {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
 }
