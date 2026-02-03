@@ -16,7 +16,6 @@
     --light-dark: #5f6c7b;
 
     /* Rouge */
-
     --red: #ef4565;
 
     /* Polices */
@@ -593,6 +592,7 @@ footer ul li:hover {
 
     header {
         position: relative;
+        align-items: normal;
     }
 
     .header__navigation {
@@ -601,25 +601,22 @@ footer ul li:hover {
         min-height: 50vh;
         right: 0;
         transform: translateY(-100%);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         background-color: #fffffe;
         transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
         z-index: 5;
     }
 
-    .header__navigation.active {
-        transform: translate(0);
-        border-bottom: 2px solid var(--dark-blue);
-    }
-
+    .header__navigation,
     .header__list {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 110px;
+    }
+
+    .header__navigation.active {
+        transform: translate(0);
+        border-bottom: 2px solid var(--dark-blue);
     }
 
     .header__link {
@@ -633,7 +630,7 @@ footer ul li:hover {
         right: 0;
         width: 40px;
         height: 40px;
-        padding: 15px 0;
+        padding-block: 15px;
         border: none;
         cursor: pointer;
         display: flex;
