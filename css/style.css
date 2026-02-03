@@ -263,23 +263,35 @@ header {
 
 .form__group {
     margin-bottom: 22px;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 .form__group label {
     display: block;
     margin-bottom: 7px;
-    font-weight: 600;
     color: var(--dark-blue);
-    font-size: 16px;
 }
 
 input[type="number"] {
     width: 100%;
-    padding: 13px;
+    padding: 14px;
     border: 2px solid var(--light-blue);
     border-radius: 8px;
-    font-size: 16px;
     background-color: var(--white);
+    -moz-appearance: textfield;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+    border-color: var(--dark-blue);
 }
 
 .frequency__options {
@@ -309,8 +321,6 @@ input[type="number"] {
     cursor: pointer;
     background-color: var(--white);
     color: var(--dark-blue);
-    font-weight: 600;
-    font-size: 16px;
     transition: all 0.3s ease-in-out;
     outline: none;
     user-select: none;
@@ -343,7 +353,7 @@ input[type="number"] {
     background-color: var(--white);
     border-radius: 8px;
     border: 2px solid var(--light-blue);
-    transition: border 0.2s;
+    transition: border 0.3s ease-in-out;
 }
 
 .checkbox__group:hover {
@@ -360,7 +370,6 @@ input[type="number"] {
     margin: 0;
     cursor: pointer;
     flex: 1;
-    font-weight: 500;
 }
 
 .calculate__btn,
@@ -414,7 +423,7 @@ input[type="number"] {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation: slideIn 0.5s ease;
+    animation: slideIn 0.4s ease-in-out;
     text-align: center;
 }
 
@@ -445,7 +454,7 @@ input[type="number"] {
     color: var(--white);
     min-height: 350px;
     display: none;
-    animation: slideIn 0.5s ease;
+    animation: slideIn 0.4s ease;
 }
 
 /**** Animation slideIn ****/
