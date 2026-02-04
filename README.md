@@ -31,7 +31,7 @@ L'application calcule automatiquement le montant HT, la TVA (20%) et le montant 
 
 ## Démonstration
 
-Lien vers le projet :
+Lien vers le projet : https://aperbet56.github.io/mon_bureau_tout_propre/
 
 ## Projet développé avec
 
