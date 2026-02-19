@@ -1,8 +1,10 @@
 ## 🧽 MON BUREAU TOUT PROPRE | SIMULATEUR DE PRIX INTERACTIF
 
-![Design preview for the project](./img/banner.png)
+- Preview du site web
 
-- Avec affichage du devis personnalisé
+  ![Design preview for the project](./img/banner.png)
+
+- Preview du site web avec affichage du devis personnalisé
 
 ![Design preview for the project](./img/banner-2.png)
 
