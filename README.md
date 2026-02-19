@@ -1,5 +1,7 @@
 ## 🧽 MON BUREAU TOUT PROPRE | SIMULATEUR DE PRIX INTERACTIF
 
+![Design preview for the project](./img/banner.png)
+
 ## Le challenge
 
 Mon Bureau Tout Propre est une entreprise spécialisée dans le nettoyage de bureaux. Elle souhaite proposer à ses clients un simulateur de prix interactif, intégré à son site internet, permettant d’obtenir une estimation claire et rapide du coût des prestations.
