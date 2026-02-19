@@ -340,3 +340,17 @@ document.addEventListener("DOMContentLoaded", () => {
   // Création d'une instance du calculateur de prix
   const calculator = new PriceCalculator();
 });
+
+// Optimisation des performances - Debounce pour les calculs en temps réel
+const debounce = (func, wait) => {
+  let timeout;
+  return function executedFunction(...args) {
+    const later = () => {
+      clearTimeout(timeout);
+      func(...args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
+};
+debounce();
