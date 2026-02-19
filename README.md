@@ -20,6 +20,19 @@ Le simulateur prend en compte :
 
 L'application calcule automatiquement le montant HT, la TVA (20%) et le montant TTC, affichés sous forme de ticket de tarification.
 
+## Tests du simulateur
+
+| Surface | Fréquence  | Vitres | Montant HT attendu | Montant TTC attendu |
+| ------- | ---------- | ------ | ------------------ | ------------------- |
+| 80 m²   | 2x/semaine | 10%    | 264€               | 316.80€             |
+| 150 m²  | 5x/semaine | 0      | 1125€              | 1350€               |
+
+- ✅ Calcul automatique lors de la modification des champs
+- ✅ Validation des données (valeurs négatives, champs vides)
+- ✅ Réactivité de l'interface
+- ✅ Affichage du devis personnalisé
+- ✅ Formatage des montants (2 décimales, symbole €)
+
 ## Contraintes techniques
 
 - Site développé en HTML5, CSS3 et JavaScript (vanilla) sans aucun framework
