@@ -451,7 +451,7 @@ input[type="number"]:focus {
 }
 
 .results {
-    color: var(--white);
+    color: var(--dark-blue);
     min-height: 350px;
     display: none;
     animation: slideIn 0.4s ease;
@@ -486,7 +486,7 @@ input[type="number"]:focus {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    border-bottom: 1px solid var(--light-dark);
+    border-bottom: 1px solid var(--light-blue);
     font-size: 16px;
 }
 
@@ -495,7 +495,7 @@ input[type="number"]:focus {
     font-weight: 700;
     font-size: 18px;
     padding-top: 18px;
-    border-top: 2px solid var(--light-dark);
+    color: var(--red);
 }
 
 /**** footer ****/
