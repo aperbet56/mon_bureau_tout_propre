@@ -602,7 +602,7 @@ footer ul li:hover {
         min-height: 50vh;
         right: 0;
         transform: translateY(-100%);
-        background-color: #fffffe;
+        background-color: var(--white);
         transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
         z-index: 5;
     }
