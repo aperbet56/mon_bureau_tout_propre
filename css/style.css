@@ -404,8 +404,8 @@ input[type="number"]:focus {
 }
 
 .error {
-    background-color: var(--dark-blue);
-    color: var(--red);
+    background-color: var(--red);
+    color: var(--white);
     padding: 14px;
     border-radius: 8px;
     margin-top: 13px;
