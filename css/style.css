@@ -521,6 +521,7 @@ footer ul li i {
 
 footer ul li {
     margin-bottom: 20px;
+    color: var(--dark-blue);
 }
 
 footer ul li,
